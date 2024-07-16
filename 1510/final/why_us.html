@@ -2,90 +2,471 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Choose Culinary Harbor?</title>
-    <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="x-icon" href="images/CulHar_Logo-removebg.png" />
+  <title>Benefits</title>
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--swiper js link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+  <!-- Animation on Scroll-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--link to main js-->
+  <script src="js/main.js"></script>
+  <script src="js/whyus.js"></script>
+
+  <script type="module" src="js/whyusmain.js">
+    
+  </script>
+
 </head>
 
-<body class="whyUs">
-    <header class="head_Why_Us">
-        <a href="#" class="logo">
-            <img src="CulHar_Logo-removebg.png" width="30px" />
-            <div class="log_text">Culinary Harbor</div>
+
+<body>
+  <!-- Header section-->
+  <header>
+    <!-- Culinary Harbor logo and text -->
+    <a href="index.html" class="logo">
+      <img src="images/CulHar_Logo-removebg.png" width="30px" />
+      <div class="log_text">Culinary Harbor</div>
+    </a>
+
+    <!-- navigation buttons -->
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="careers.html">Careers</a>
+      <a href="why_us.html">Benefits</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <!-- Apply button and toggle icon for mobile menu -->
+    <div class="apply_btn">
+      <button class="btn menu-btn">
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
         </a>
+      </button>
+      <script>
+        // Call the function on page load
+        updateCartCountOnLoad();
+      </script>
+      <button class="btn"><a href="apply.html">Apply Now</a></button>
+      <i class="fa-solid fa-bars" id="bar"></i>
 
-        <nav class="navbar">
-            <a class="active" href="main.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About Us</a>
-            <a href="careers.html">Careers</a>
-            <a href="why_us.html">Why Us</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
+    </div>
+  </header>
 
-        <div class="apply_btn">
-            <button class="btn"><a href="apply.html">Apply Now</a></button>
-            <i class="fa-solid fa-bars" id="bar"></i>
+  <!--benefits container-->
+  <main class="benefits-page">
+    <br><br>
+    <br><br>
+
+    <!--First benefit title-->
+    <div data-aos="fade-up" class="heading3">
+      <h1>Competitive Compensation</h1>
+    </div>
+    <br>
+
+    <!--First benefit slider-->
+    <section class="adoption">
+      <!-- Container for AOS animation and overall content -->
+      <div data-aos="zoom-in" class="mega">
+        <!-- Container for items displayed sideways -->
+        <div class="sideways items">
+          <!-- Cover container for adoption section -->
+          <div class="adoptcover">
+            <!-- Secondary cover for additional styling purposes -->
+            <div class="adoptcovertwo">
+              <!-- Column for image and scrolling prompt -->
+              <div class="adoption-col">
+                <!-- Image representing benefits -->
+                <img class="benefits-img" src="images/chefs_cooking.png" alt="Benefits Image">
+                <!-- Container for scroll prompt -->
+                <div class="petball">
+                  <h2 class="wide">Scroll to learn more
+                    <!-- Right arrow icon -->
+                    <span class="arrow-icon"><i class="fa-solid fa-angles-right"></i></span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <!-- Column for text content about benefits -->
+            <div class="adoption-col">
+              <!-- Container for adoption text content -->
+              <div class="adoptiontext">
+                <!-- Left-aligned text with specific styling class -->
+                <div style="text-align: left" class="cuisine">
+                  <!-- Header for the benefits section -->
+                  <h2 class="about-content2">We Reward Talent</h2>
+                </div>
+                <!-- Main text content describing benefits -->
+                <h1>Culinary Harbor values our team members' talent and hard work by offering
+                  competitive
+                  compensation packages. We prioritize financial stability and fair compensation, attracting
+                  skilled
+                  professionals and fostering appreciation among our staff. <br><br>
+                  By providing competitive salaries, we aim to alleviate financial stress and empower our team
+                  members to focus
+                  on delivering exceptional culinary experiences to our guests.
+                </h1>
+                <!-- Link to careers page -->
+                <a href="careers.html" class="read-more3">Apply Now</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="why-us">
-            <div class="content">
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2>Why Join Culinary Harbor?</h2>
-                <br>
-                <h10 class="section-title">Embark on a Culinary Journey with Us!</h10>
-                <br>
-                <h1>Welcome to Culinary Harbor, where passion meets innovation, and excellence is a way of life. Joining our
-                    team opens doors to a world of exciting opportunities and rewarding experiences. Here's why you should
-                    make Culinary Harbor your professional home:</h1>
+    <!--spacing-->
+    <br><br>
 
-                <div class="benefits">
-                    <div class="benefit-item">
-                        <h3>Exciting Work Environment</h3>
-                        <img class="benefit-image" src="image-asset.jpeg" width="400px" />
-                        <p>Immerse yourself in a dynamic and thrilling culinary environment that encourages creativity and
-                            embraces innovation. Every day at Culinary Harbor brings new challenges and opportunities to
-                            showcase your skills.</p>
-                        <p>Our kitchen is a vibrant space where culinary talents are nurtured, and you'll find a sense of
-                            accomplishment in every dish you create. The fast-paced yet collaborative atmosphere fuels
-                            your passion for culinary excellence.</p>
-                    </div>
+    <!--Second benefit title-->
+    <div class="sect">
+      <div data-aos="fade-up" class="heading3">
+        <h1>Opportunities for Career Growth</h1>
+      </div>
+      <br>
 
-                    <div class="benefit-item">
-                        <h3>Career Growth Opportunities</h3>
-                        <img class="benefit-image" src="restaurant-team-of-employees-1620x1080.jpg" width="400px" />
-                        <p>At Culinary Harbor, we believe in investing in the professional development of our employees.
-                            Grow your culinary career with us through diverse opportunities for advancement, skill
-                            enhancement, and continuous learning.</p>
-                        <p>Whether you're an aspiring chef or an experienced culinary professional, our commitment to
-                            career growth means you'll have the chance to explore new roles, take on leadership
-                            responsibilities, and expand your culinary horizons.</p>
-                    </div>
+      <!--Second benefit slider-->
+      <section data-aos="zoom-in" class="adoption">
+        <!-- Container for the main content -->
+        <div class="mega">
+          <!-- Container for sideways displayed items -->
+          <div id="second-benefit" class="sideways items">
+            <!-- Cover container for adoption section -->
+            <div class="adoptcover">
+              <!-- Secondary cover for additional styling or layout purposes -->
+              <div class="adoptcovertwo">
+                <!-- Column for image and scrolling prompt -->
+                <div class="adoption-col">
+                  <!-- Image representing benefits -->
+                  <img id="cooking-img" src="images/cooking-camp-abstract-illustration (1).png" alt="Benefits Image">
+                  <!-- Container for scroll prompt -->
+                  <div class="petball">
+                    <h2 id="second-text" class="wide">Scroll to learn more
+                      <!-- Right arrow icon -->
+                      <span class="arrow-icon"><i class="fa-solid fa-angles-right"></i></span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <!-- Column for text content about benefits -->
+              <div class="adoption-col">
+                <!-- Container for adoption text content -->
+                <div class="adoptiontext">
+                  <!-- Left-aligned text with specific styling class -->
+                  <div style="text-align: left" class="cuisine">
+                    <!-- Header for the benefits section with background color styling -->
+                    <h2 style="background-color: #E8E8E8" class="about-content2">Empowering Ambition, Unlocking
+                      Potential</h2>
+                  </div>
+                  <!-- Main text content describing benefits -->
+                  <h1 id="second-adoptiontext">Joining Culinary Harbor means stepping into a world of possibilities. Our
+                    commitment to your growth is evident in our
+                    tailored training programs, mentorship initiatives, and clear advancement paths. We empower you to
+                    take
+                    charge of your
+                    career, providing the tools and support you need to succeed. Grow with us, and reach new heights in
+                    your
+                    professional
+                    journey.
+                  </h1>
+                  <!-- Link to careers page -->
+                  <a href="careers.html" class="read-more3">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-                    <div class="benefit-item">
-                        <h3>Team Collaboration</h3>
-                        <img class="benefit-image" src="staffmeeting_resized_otb.jpg" width="400px" height="200px" />
-                        <p>Join a supportive team that values collaboration and teamwork. At Culinary Harbor, we
-                            celebrate the power of collective effort. Work alongside skilled professionals who share
-                            your passion for culinary excellence, creating an environment where success is a shared
-                            achievement.</p>
-                        <p>Our kitchen is not just a workplace; it's a community of culinary enthusiasts who thrive on
-                            shared goals and mutual support. Collaborate with talented chefs and culinary experts to
-                            create extraordinary dining experiences.</p>
-                    </div>
-                    </div>
-                    </div>
-        </section>
-                            
+    <!--Third benefit title-->
+    <div class="heading3">
+      <h1 data-aos="fade-up">Positive Work Culture and Environment</h1>
+    </div>
+    <br>
+
+    <!--Third benefit slider-->
+    <section data-aos="zoom-in" class="adoption">
+      <!-- Container for the main content -->
+      <div class="mega">
+        <!-- Container for sideways displayed items -->
+        <div class="sideways items">
+          <!-- Cover container for adoption section -->
+          <div class="adoptcover">
+            <!-- Secondary cover for additional styling or layout purposes -->
+            <div class="adoptcovertwo">
+              <!-- Column for image and scrolling prompt -->
+              <div class="adoption-col">
+                <!-- Image representing benefits -->
+                <img src="images/kids-with-pan.png" alt="Benefits Image">
+                <!-- Container for scroll prompt -->
+                <div class="petball">
+                  <h2 class="wide">Scroll to learn more
+                    <!-- Right arrow icon -->
+                    <span class="arrow-icon"><i class="fa-solid fa-angles-right"></i></span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <!-- Column for text content about benefits -->
+            <div class="adoption-col">
+              <!-- Container for adoption text content -->
+              <div class="adoptiontext">
+                <!-- Left-aligned text with specific styling class -->
+                <div style="text-align: left" class="cuisine">
+                  <!-- Header for the benefits section -->
+                  <h2 class="about-content2">Cultivating Excellence, Together.</h2>
+                </div>
+                <!-- Main text content describing benefits -->
+                <h1>At Culinary Harbor, we foster a positive work culture and environment where collaboration, respect,
+                  and innovation thrive. Our inclusive atmosphere encourages teamwork and creativity, ensuring that
+                  every
+                  voice is heard and valued. Join us and be part of a workplace where you can truly shine.
+                </h1>
+                <!-- Link to careers page -->
+                <a href="careers.html" class="read-more3">Apply Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Employee review section starts-->
+    <section class="testimonials">
+      <!-- Container for the testimonials content -->
+      <div class="emp-container">
+        <!-- Wrapper for all testimonials content -->
+        <div class="testimonials-content">
+          <!-- Header for testimonials with AOS animation -->
+          <div data-aos="fade-up" class="emp-header">
+            <h2 class="emp-title">Here's what our Employees say</h2>
+          </div>
+          <!-- Swiper container for testimonials slider with AOS animation -->
+          <div data-aos="fade-up" class="swiper testimonials-slider js-testimonials-slider">
+            <!-- Wrapper for swiper slides -->
+            <div class="swiper-wrapper">
+              <!-- Individual testimonial slide -->
+              <div class="swiper-slide testimonials-item">
+                <!-- Information section for testimonial (image and text) -->
+                <div class="info">
+                  <img src="images/testimonial pics/man1.jpg" alt="picture of man">
+                  <!-- Text box with name and job title -->
+                  <div class="text-box">
+                    <h3 class="name">Ethan Miller</h3>
+                    <span class="job">Manager</span>
+                  </div>
+                </div>
+                <!-- Testimonial text -->
+                <p>I've been a manager at Culinary Harbor for 2 years, and I love the supportive work environment and
+                  opportunities for growth. The team is amazing, and management truly cares about employee well-being.
+                </p>
+              </div>
+
+              <!-- Individual testimonial slide -->
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/testimonial pics/girl1.jpg" alt="picture of woman">
+                  <div class="text-box">
+                    <h3 class="name">Sophia Williams</h3>
+                    <span class="job">Cashier</span>
+                  </div>
+                </div>
+                <p>Being a cashier at Culinary Harbor has been a rewarding experience. The team is supportive, and I
+                  enjoy interacting with our customers daily. The management is understanding and always open to
+                  feedback.
+                </p>
+              </div>
+
+              <!-- Individual testimonial slide -->
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/testimonial pics/man2.jpg" alt="picture of man">
+                  <div class="text-box">
+                    <h3 class="name">Alexander Smith</h3>
+                    <span class="job">Waiter</span>
+                  </div>
+                </div>
+                <p>Working as a waiter at Culinary Harbor has been a fantastic experience. The flexible hours and
+                  friendly coworkers make every shift enjoyable. The tips are great too, thanks to our wonderful
+                  customers!
+                </p>
+              </div>
+
+              <!-- Individual testimonial slide -->
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/testimonial pics/girl2.jpg" alt="picture of woman">
+                  <div class="text-box">
+                    <h3 class="name">Isabella Brown</h3>
+                    <span class="job">Waitress</span>
+                  </div>
+                </div>
+                <p>As a waitress at Culinary Harbor, I appreciate the positive work culture and excellent training. The
+                  staff is like family, and we always strive to provide the best service. It's a great place to work!
+                </p>
+              </div>
+
+              <!-- Individual testimonial slide -->
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/testimonial pics/man3.jpg" alt="picture of man">
+                  <div class="text-box">
+                    <h3 class="name">Lucas Johnson</h3>
+                    <span class="job">Chef</span>
+                  </div>
+                </div>
+                <p>Working as a chef at Culinary Harbor allows me to express my creativity with food. The kitchen is
+                  well-equipped, and the collaborative atmosphere makes it a joy to come to work every day. Love it
+                  here!
+                </p>
+              </div>
+
+              <!-- Individual testimonial slide -->
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/testimonial pics/girl3.jpg" alt="picture of woman">
+                  <div class="text-box">
+                    <h3 class="name">Mia Davis</h3>
+                    <span class="job">Chef</span>
+                  </div>
+                </div>
+                <p>Culinary Harbor is a chef's dream! The focus on quality and innovation keeps me inspired. The team is
+                  passionate, and we always push each other to excel. It's an amazing place to grow and refine my
+                  skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper pagination controls -->
+          <div class="swiper-pagination js-testimonials-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Footer section -->
+    <section class="footer">
+      <!-- Box container for footer content -->
+      <div class="box-container">
+        <!-- Box for displaying operating hours -->
+        <div class="box">
+          <h3>Hours</h3>
+          <!-- Operating hours for each day -->
+          <a href="#" onclick="event.preventDefault();">Monday: 10:00AM - 11:00PM</a>
+          <a href="#" onclick="event.preventDefault();">Tuesday: 10:00AM - 11:00PM</a>
+          <a href="#" onclick="event.preventDefault();">Wednesday: 10:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Thursday: 10:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Friday: 10:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Saturday: 8:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Sunday: 8:00AM - 11:00PM </a>
+        </div>
+        <!-- Box for displaying locations -->
+        <div class="box">
+          <h3>Locations</h3>
+          <!-- Location links -->
+          <a href="#" onclick="event.preventDefault();">United States</a>
+          <a href="#" onclick="event.preventDefault();">Japan</a>
+          <a href="#" onclick="event.preventDefault();">India</a>
+          <a href="#" onclick="event.preventDefault();">China</a>
+          <a href="#" onclick="event.preventDefault();">Russia</a>
+          <a href="#" onclick="event.preventDefault();">France</a>
+          <a href="#" onclick="event.preventDefault();">Iran</a>
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <!-- Quick links to various pages -->
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="careers.html">Careers</a>
+          <a href="why_us.html">Benefits</a>
+          <a href="faq.html">FAQ</a>
+          <a href="support.html">Support</a>
+          <a href="apply.html">Apply</a>
+          <a href="sources.html"> Sources</a>
+        </div>
+
+        <div class="box">
+          <h3>Contact</h3>
+          <!--Show conatct info-->
+          <h4>Phone Numbers</h4>
+          <a href="tel:+1234567890"><i class="fa-solid fa-phone" style="color: #ff0000;"></i> +123-456-7892</a>
+          <a href="tel:+1234567890"><i class="fa-solid fa-phone" style="color: #ff0000;"></i> +111-222-3333</a>
+          <h4 class="email-footer">Email</h4>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=culinaryharbor30@gmail.com" target="_blank" class="email-link">
+            <i class="fa-solid fa-envelope" style="color: #ff0000;"></i> culinaryharbor30@gmail.com
+          </a>
+        </div>
+
+        <!--Social Links-->
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/culinaryharbor30/" target="_blank"><i class="fa-brands fa-instagram"
+              style="color: #ff0000;"></i> Instagram</a>
+          <a href="https://twitter.com/culinaryh30" target="_blank"><i class="fa-brands fa-twitter"
+              style="color: #ff0000;"></i>
+            Twitter</a>
+          <a href="https://www.youtube.com/channel/UCaL5GaP2e81gd7W2CmJVW-g" target="_blank"><i
+              class="fa-brands fa-youtube" style="color: #ff0000;"></i> Youtube</a>
+        </div>
+      </div>
+
+      <!-- Horizontal line -->
+      <hr>
+
+      <!-- Copyright information -->
+      <div class="credit">
+        &copy; 2024 <span>Culinary Harbor.</span> All rights reserved.
+      </div>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.js-testimonials-slider', {
+      grabCursor: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.js-testimonials-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        767: {
+          slidesPerView: 2
+        }
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 400, // Increase the duration
+        easing: 'ease-in-out', // Adjust the easing
+        once: true // Ensure the animation occurs only once
+      });
+    });
+
+  </script>
+  <!--Accesibility widget-->
+</body>
+
+</html>

@@ -2,96 +2,404 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers at Culinary Harbor</title>
-    <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="x-icon" href="images/CulHar_Logo-removebg.png" />
+  <title>Careers</title>
 
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+  <!--Animation on Scroll library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Careers JavaScript -->
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/careers.js"></script>
+
+  <script type="module" src="js/careersmain.js">
+    
+  </script>
 </head>
 
-<body class="careers">
-    <header class="head_careers">
-        <a href="#" class="logo">
-            <img src="CulHar_Logo-removebg.png" width="30px" />
-            <div class="log_text">Culinary Harbor</div>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/CulHar_Logo-removebg.png" width="30px" />
+      <div class="log_text">Culinary Harbor</div>
+    </a>
+    <!-- Navigation menu -->
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a class="active" href="careers.html">Careers</a>
+      <a href="why_us.html">Benefits</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <!-- Apply button -->
+    <div class="apply_btn">
+      <button class="btn menu-btn">
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
         </a>
+      </button>
+      <script>
+        // Call the function on page load
+        updateCartCountOnLoad();
+      </script>
+      <button class="btn"><a href="apply.html">Apply Now</a></button>
+      <i class="fa-solid fa-bars" id="bar"></i>
 
-        <nav class="navbar">
-            <a href="main.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About Us</a>
-            <a class="active" href="careers.html">Careers</a>
-            <a href="why_us.html">Why Us</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
+    </div>
+  </header>
 
-        <div class="apply_btn">
-            <button class="btn"><a href="apply.html">Apply Now</a></button>
-            <i class="fa-solid fa-bars" id="bar"></i>
+  <!-- Main content section -->
+  <main class="careers">
+    <br>
+    <br>
+    <br>
+    <div class="jobs-list-container">
+      <div class="job_num">
+        <h2 data-aos="fade-left">4 Jobs Available</h2>
+      </div>
+
+      <input data-aos="fade-left" class="job-search" type="search" placeholder="Search here...">
+
+      <!-- Jobs -->
+      <div data-aos="fade-up" class="jobs">
+
+        <!-- Job 1 -->
+        <div class="job">
+          <img class="general-manager" src="images/careers imgs/General_Manager.jpg">
+          <h3 class="job-title">General Manager</h3>
+          <div class="details">
+
+            As the General Manager, you will be the key orchestrator of operational
+            excellence also be able to manage the restaurant while also ensuring exceptional guest experiences. <br><br>
+            <button class="learn-more-btn" onclick="openModal('modal2')">Learn More</button>
+
+            <a href="applypos1.html" class="details-btn">Apply</a>
+          </div>
+          <span class="open-positions"><big><big>1 open position</big></big></span>
         </div>
-    </header>
 
-    <main>
-        <section class="careers-section">
-            <div class="content">
+        <!-- Modal 1 -->
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-job">
+              <img class="general-manager" src="images/careers imgs/General_Manager.jpg">
+              <h3 class="job-title">General Manager</h3>
+              <div class="details">
+                As the General Manager of Culinary Harbor, you will be the key orchestrator of operational
+                excellence, overseeing day-to-day restaurant management, ensuring exceptional guest experiences,
+                and leading a dynamic team to culinary success. <br><br>
+                <strong>Responsibilities:</strong>
+                <ul>
+                  <li>Oversee daily operations of the restaurant</li>
+                  <li>Manage staff, including hiring and training</li>
+                  <li>Monitor inventory and order supplies</li>
+                  <li>Ensure compliance with health and safety regulations</li>
+                  <li>Develop and implement strategies to increase profitability</li>
+                </ul>
+                <br><br>
+                <strong>Requirements/Skills:</strong>
+                <ul>
+                  <li>Previous experience in restaurant management</li>
+                  <li>Strong leadership and communication skills</li>
+                  <li>Ability to multitask and problem-solve effectively</li>
+                  <li>Knowledge of food safety standards and regulations</li>
+                  <li>Business acumen and budget management skills</li>
+                </ul>
+                <br>
+                <strong>Salary: $80,900/year</strong>
+              </div>
               <br>
-              <br>
-              <br>
-              <h2>Join Our Culinary Team</h2>
-              <br>
-              <p>At Culinary Harbor, we are always looking for passionate and talented individuals to join our culinary
-                    team. If you have a love for cooking, creativity in the kitchen, and a desire to be part of a dynamic
-                    culinary environment, we'd love to hear from you!</p>
-
-              <div class="available-positions">
-              <div class="position-item">
-              <h3>Culinary Artist</h3>
-              <img class="benefit-image" src="culinary_artist.jpg" width="300px" />
-              <p>Unleash your creativity as a Culinary Artist. Bring artistic flair to our dishes and create
-                            visually stunning culinary masterpieces. Join us in redefining the art of cooking.</p>
-              <button class="apply-btn"><a href="apply.html">Apply Now</a></button>
+              <a href="applypos1.html" class="details-btn">Apply</a>
+              <span class="open-positions"><big><big>1 open position</big></big></span>
             </div>
+          </div>
+        </div>
 
-                    <div class="position-item">
-                        <h3>Pastry Chef</h3>
-                        <img class="benefit-image" src="pastry_chef.jpg" width="300px" />
-                        <p>Satisfy sweet cravings as a Pastry Chef. Showcase your skills in crafting delightful pastries
-                            and desserts. Join our team and be part of creating unforgettable dessert experiences.</p>
-                        <button class="apply-btn"><a href="apply.html">Apply Now</a></button>
-                    </div>
+        <!-- Job 2 -->
+        <div class="job">
+          <img class="cashier" src="images/careers imgs/Cashier.jpg">
+          <h3 class="job-title">Cashier</h3>
+          <div class="details">
 
-                    <div class="position-item">
-                        <h3>Grill Master</h3>
-                        <img class="benefit-image" src="grill_master.jpg" width="300px" />
-                        <p>Ignite the flavors as a Grill Master. Perfect your grilling techniques and contribute to our
-                            sizzling menu. Join us in delivering mouthwatering grilled delights to our patrons.</p>
-                        <button class="apply-btn"><a href="apply.html">Apply Now</a></button>
-                    </div>
+            As a Cashier at Culinary Harbor, you are key to our exceptional customer service. Your
+            friendly attentive and efficient service should help create a welcoming atmosphere.
+            <br><br>
+            <button class="learn-more-btn" onclick="openModal('modal4')">Learn More</button>
 
-                    <!-- Add more positions as needed -->
+            <a href="applypos2.html" class="details-btn">Apply</a>
+          </div>
+          <span class="open-positions"> <big><big>3 open positions</big></big></span>
+        </div>
 
-                </div>
+        <!-- Modal 2 -->
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+            <div class="modal-job">
+              <img class="cashier" src="images/careers imgs/Cashier.jpg">
+              <h3 class="job-title">Cashier</h3>
+              <div class="details">
+                As a Cashier at Culinary Harbor, you’re key to our exceptional customer service. More than processing
+                transactions, your
+                friendly demeanor and efficient service helps create a welcoming atmosphere, ensuring smooth
+                transactions for
+                every guest.
+                <br><br>
+                <strong>Responsibilities:</strong>
+                <ul>
+                  <li>Process customer transactions accurately and efficiently</li>
+                  <li>Provide excellent customer service and assist with customer inquiries</li>
+                  <li>Maintain a clean and organized checkout area</li>
+                  <li>Handle cash, credit, and debit transactions securely</li>
+                  <li>Assist with inventory management and restocking as needed</li>
+                </ul>
+                <br><br>
+                <strong>Requirements/Skills:</strong>
+                <ul>
+                  <li>Previous experience as a cashier or in customer service</li>
+                  <li>Strong communication and interpersonal skills</li>
+                  <li>Ability to handle transactions accurately and efficiently</li>
+                  <li>Basic math skills and attention to detail</li>
+                  <li>Ability to work in a fast-paced environment</li>
+                </ul>
+                <br>
+                <strong>Salary: $40,000/year</strong>
+
+              </div>
+              <br>
+              <a href="applypos2.html" class="details-btn">Apply</a>
+              <span class="open-positions"><big><big>3 open positions</big></big></span>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
 
-    <footer>
-        <nav>
-            <a href="main.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About Us</a>
-            <a href="careers.html">Careers</a>
-            <a href="why_us.html">Why Us</a>
-            <a href="faq.html">FAQ</a>
-            <a href="apply.html">Apply Now</a>
-        </nav>
-        &copy; 2024 Culinary Harbor. All rights reserved.<br>
-    </footer>
+        <!-- Job 3 -->
+        <div class="job">
+          <img class="waiter" src="images/careers imgs/waiter.jpg">
+          <h3 class="job-title">Waiter/Waitress</h3>
+          <div class="details">
+
+            Join us as a Waiter/Waitress at Culinary Harbor, where your Eattentive service ensure
+            unforgettable dining experiences. Your goal is to exceed guest expectations.<br><br>
+            <button class="learn-more-btn" onclick="openModal('modal5')">Learn More</button>
+
+            <a href="applypos3.html" class="details-btn">Apply</a>
+          </div>
+          <span class="open-positions"> <big><big>6 open positions</big></big></span>
+        </div>
+
+        <!-- Modal 1 -->
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+            <div class="modal-job">
+              <img class="waiter" src="images/careers imgs/waiter.jpg">
+              <h3 class="job-title">Waiter/Waitress</h3>
+              <div class="details">
+                Join us as a Waiter/Waitress at Culinary Harbor, where your warmth, expertise, and attentive service
+                ensure
+                unforgettable dining experiences. Your dedication to consistently exceeding guest expectations upholds
+                our
+                reputation
+                for excellence.
+                <br><br>
+                <strong>Responsibilities:</strong>
+                <ul>
+                  <li>Greet and seat customers in a friendly and professional manner</li>
+                  <li>Take accurate food and beverage orders from customers</li>
+                  <li>Serve food and drinks promptly and efficiently</li>
+                  <li>Provide menu recommendations and answer customer questions</li>
+                  <li>Ensure tables are clean and properly set before seating guests</li>
+                </ul>
+                <br><br>
+                <strong>Requirements/Skills:</strong>
+                <ul>
+                  <li>Previous experience as a waiter or in a customer service role</li>
+                  <li>Strong communication and interpersonal skills</li>
+                  <li>Ability to multitask and work in a fast-paced environment</li>
+                  <li>Attention to detail and high standards of cleanliness</li>
+                  <li>Flexible schedule, including availability on weekends and holidays</li>
+                </ul>
+                <br>
+                <strong>Salary: $35,000/year plus tips</strong>
+
+              </div>
+              <br>
+              <a href="applypos3.html" class="details-btn">Apply</a>
+              <span class="open-positions"><big><big>6 open positions</big></big></span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Job 4 -->
+        <div class="job">
+          <img class="sous-chef" src="images/careers imgs/sous_chef.jpg">
+          <h3 class="job-title">Sous Chef</h3>
+          <div class="details">
+            Join us as a Sous Chef at Culinary Harbor, where your culinary skills, leadership, and passion for food
+            create exceptional dining experiences.
+            <br><br>
+            <button class="learn-more-btn" onclick="openModal('modal1')">Learn More</button>
+            <a href="applypos4.html" class="details-btn">Apply</a>
+          </div>
+          <span class="open-positions"><big><big>3 open positions</big></big></span>
+        </div>
+
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-job">
+              <img class="sous-chef" src="images/careers imgs/sous_chef.jpg">
+              <h3 class="job-title">Sous Chef</h3>
+              <div class="details">
+                Join us as a Sous Chef at Culinary Harbor, where your culinary skills, leadership, and passion for food
+                creates exceptional dining experiences.
+                <br><br>
+                <strong>Responsibilities:</strong>
+                <ul>
+                  <li>Oversee daily operations of the restaurant</li>
+                  <li>Manage staff, including hiring and training</li>
+                  <li>Monitor inventory and order supplies</li>
+                  <li>Ensure compliance with health and safety regulations</li>
+                  <li>Develop and implement strategies to increase profitability</li>
+                </ul>
+                <br><br>
+                <strong>Requirements/Skills:</strong>
+                <ul>
+                  <li>Previous experience in restaurant management</li>
+                  <li>Strong leadership and communication skills</li>
+                  <li>Ability to multitask and problem-solve effectively</li>
+                  <li>Knowledge of food safety standards and regulations</li>
+                  <li>Business acumen and budget management skills</li>
+                </ul>
+                <br>
+                <strong>Salary: $62,900/year</strong>
+              </div>
+              <br>
+              <a href="applypos4.html" class="details-btn">Apply</a>
+              <span class="open-positions"><big><big>3 open positions</big></big></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Footer section -->
+    <section class="footer">
+      <!-- Box container for footer content -->
+      <div class="box-container">
+        <!-- Box for displaying operating hours -->
+        <div class="box">
+          <h3>Hours</h3>
+          <!-- Operating hours for each day -->
+          <a href="#" onclick="event.preventDefault();">Monday: 10:00AM - 11:00PM</a>
+          <a href="#" onclick="event.preventDefault();">Tuesday: 10:00AM - 11:00PM</a>
+          <a href="#" onclick="event.preventDefault();">Wednesday: 10:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Thursday: 10:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Friday: 10:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Saturday: 8:00AM - 11:00PM </a>
+          <a href="#" onclick="event.preventDefault();">Sunday: 8:00AM - 11:00PM </a>
+        </div>
+        <!-- Box for displaying locations -->
+        <div class="box">
+          <h3>Locations</h3>
+          <!-- Location links -->
+          <a href="#" onclick="event.preventDefault();">United States</a>
+          <a href="#" onclick="event.preventDefault();">Japan</a>
+          <a href="#" onclick="event.preventDefault();">India</a>
+          <a href="#" onclick="event.preventDefault();">China</a>
+          <a href="#" onclick="event.preventDefault();">Russia</a>
+          <a href="#" onclick="event.preventDefault();">France</a>
+          <a href="#" onclick="event.preventDefault();">Iran</a>
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <!-- Quick links to various pages -->
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="careers.html">Careers</a>
+          <a href="why_us.html">Benefits</a>
+          <a href="faq.html">FAQ</a>
+          <a href="support.html">Support</a>
+          <a href="apply.html">Apply</a>
+          <a href="sources.html"> Sources</a>
+        </div>
+
+        <div class="box">
+          <h3>Contact</h3>
+          <!--Show conatct info-->
+          <h4>Phone Numbers</h4>
+          <a href="tel:+1234567890"><i class="fa-solid fa-phone" style="color: #ff0000;"></i> +123-456-7892</a>
+          <a href="tel:+1234567890"><i class="fa-solid fa-phone" style="color: #ff0000;"></i> +111-222-3333</a>
+          <h4 class="email-footer">Email</h4>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=culinaryharbor30@gmail.com" target="_blank" class="email-link">
+            <i class="fa-solid fa-envelope" style="color: #ff0000;"></i> culinaryharbor30@gmail.com
+          </a>
+        </div>
+
+        <!--SOcial Links-->
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/culinaryharbor30/" target="_blank"><i class="fa-brands fa-instagram"
+              style="color: #ff0000;"></i> Instagram</a>
+          <a href="https://twitter.com/culinaryh30" target="_blank"><i class="fa-brands fa-twitter"
+              style="color: #ff0000;"></i>
+            Twitter</a>
+          <a href="https://www.youtube.com/channel/UCaL5GaP2e81gd7W2CmJVW-g" target="_blank"><i
+              class="fa-brands fa-youtube" style="color: #ff0000;"></i> Youtube</a>
+        </div>
+      </div>
+
+      <!-- Horizontal line -->
+      <hr>
+
+      <!-- Copyright information -->
+      <div class="credit">
+        &copy; 2024 <span>Culinary Harbor.</span> All rights reserved.
+      </div>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 400, // Increase the duration
+        easing: 'ease-in-out', // Adjust the easing
+        once: true // Ensure the animation occurs only once
+      });
+    });
+  </script>
+  <!--Accesibility widget-->
+  <script src="js/careers.js"></script>
 </body>
+
 
 </html>
